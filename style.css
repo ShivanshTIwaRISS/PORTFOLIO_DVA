@@ -278,6 +278,34 @@ nav {
     justify-content: center;
 }
 
+.uber-preview {
+    background: linear-gradient(135deg, #000000 0%, #2c3e50 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-donut {
+    width: 60px;
+    height: 60px;
+    border: 10px solid var(--accent-blue);
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.preview-donut::after {
+    content: '86%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
 .preview-circle {
     width: 60px;
     height: 60px;
