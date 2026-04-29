@@ -400,28 +400,28 @@ nav {
     color: var(--accent-blue);
 }
 
-.skill-list {
+.skill-chips {
     list-style: none;
-}
-
-.skill-item {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
 }
 
-.skill-bar {
-    height: 4px;
+.skill-chips li {
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 2px;
-    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
 }
 
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
-    border-radius: 2px;
+.skill-chips li:hover {
+    background: rgba(0, 242, 255, 0.1);
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+    transform: translateY(-2px);
 }
 
 /* --- Profile Cards --- */
